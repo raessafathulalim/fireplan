@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ProjectSummary from './ProjectSummary';
+import { Link } from 'react-router-dom'
 
 class ProjectList extends Component {
     render() {
@@ -7,7 +8,9 @@ class ProjectList extends Component {
             <div className="project-list section">
                 {this.props.projects && this.props.projects.map(project => {
                     return(
-                        <ProjectSummary project={project} key={project.id} />
+                        <Link to={'/project/'+ project.id} key={project.id}>
+                            <ProjectSummary project={project} key={project.id} />
+                        </Link>
                     )
                 })}
             </div>
