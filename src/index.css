@@ -8,10 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/img/mario-bg.png) no-repeat;
+  background: url(/img/space_app.jpeg) no-repeat;
   background-size: 100%;
-  background-position: bottom;
-  background-color: #95e8f3;
+  background-position: top;
+  background-color: #222222;
   min-height: 100%;
 }
 
